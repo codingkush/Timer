@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <!--== Timer 
+    ================================-->
+    <div class="title">Timer BY Kush</div>
+    <div class="timer">
+      <div class="timer__container">
+        <div class="timer__controls">
+          <input type="text" class="timer__duration" value="20" />
+          <button class="timer__btn timer__start">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="timer__btn timer__pause">
+            <i class="fas fa-pause"></i>
+          </button>
+        </div>
+        <svg class="timer__svg">
+          <circle
+            class="timer__circle"
+            r="200"
+            cx="300"
+            cy="300"
+            transform="rotate(-90 300 300)"
+          ></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!--== Overlay 
+    ================================-->
+    <div class="overlay">
+      <div class="overlay__msg">
+        <p class="overlay__title">Timer is completed</p>
+        <p class="overlay__close">
+          Click the <span>esc</span> button to close the message
+        </p>
+      </div>
+    </div>
+
+    <!--== Javascript 
+    ================================-->
+    <script src="js/timer.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
